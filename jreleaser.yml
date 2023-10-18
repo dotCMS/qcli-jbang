@@ -4,8 +4,17 @@ project:
   description: app -- Sample Quarkus CLI application
   longDescription: app -- Sample Quarkus CLI application
   versionPattern: 'CUSTOM:0Y.0M.MICRO'
+  stereotype: CLI
   java:
     mainClass: com.dotcms.GreetingCommand
+  copyright: |
+    The Apache-2.0 License
+  license: Apache-2.0
+  links:
+    homepage: https://www.dotcms.com
+    documentation: https://www.dotcms.com/docs/latest
+  authors:
+    - dotCMS
 
 release:
   github:
@@ -25,27 +34,6 @@ release:
           - GitHub
           - dependabot
 
-#deploy:
-#  maven:
-#    artifactory:
-#      jreleaser-cli:
-#        active: ALWAYS
-#        url: http://localhost:8082/artifactory/jreleaser-cli-libs-release-local/com/dotcms/jreleaser-cli
-##        url: http://localhost:8082/ui/admin/repositories/local/jreleaser-cli-libs-release-local/com/dotcms/jreleaser-cli
-#        stagingRepositories:
-#          - target
-
-#upload:
-#  artifactory:
-#    jreleaser-cli:
-#      active: ALWAYS
-#      host: 'http://localhost:8082/artifactory'
-#      repositories:
-#        - path: 'jreleaser-cli-libs-release-local/{{projectName}}/{{projectVersion}}/{{artifactFile}}'
-#          active: ALWAYS
-#          fileTypes:
-#            - JAR
-
 distributions:
   qcli-jbang:
     type: SINGLE_JAR
@@ -64,15 +52,3 @@ packagers:
     active: ALWAYS
     continueOnError: false
 
-#jreleaser:
-#  jbang:
-#    scripts:
-#      - name: my-script
-#        alias: script-alias
-#        description: Description of the script
-#        mainClass: com.example.MyScript
-#announce:
-#  slack:
-#    active: ALWAYS
-#    channel: '#jreleaser'
-#    message: '🚀 {{projectNameCapitalized}} {{projectVersion}} has been released!'
