@@ -49,6 +49,7 @@ packagers:
     continueOnError: false
     multiPlatform: true
   jbang:
+    alias: qcli
     active: ALWAYS
     continueOnError: false
 
