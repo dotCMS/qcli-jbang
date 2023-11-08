@@ -21,6 +21,7 @@ release:
     tagName: 'v{{projectVersion}}'
     releaseName: '{{projectVersion}}'
     overwrite: true
+    skipRelease: true
     changelog:
       formatted: ALWAYS
       format: '- {{commitShortHash}} {{commitTitle}}'
