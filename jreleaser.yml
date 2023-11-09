@@ -19,9 +19,9 @@ project:
 release:
   github:
     tagName: 'v{{projectVersion}}'
-    releaseName: '{{projectVersion}}'
+    releaseName: 'qcli {{projectVersion}}'
     overwrite: true
-    skipRelease: true
+#    skipRelease: true
     changelog:
       formatted: ALWAYS
       format: '- {{commitShortHash}} {{commitTitle}}'
