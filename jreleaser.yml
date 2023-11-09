@@ -18,7 +18,7 @@ project:
 
 release:
   github:
-    tagName: 'v{{projectVersion}}'
+    tagName: 'qcli{{projectVersion}}'
     releaseName: 'qcli {{projectVersion}}'
     overwrite: true
 #    skipRelease: true

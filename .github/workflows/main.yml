@@ -3,8 +3,8 @@ name: Release
 on:
   release:
     types: [created]
-    branches-ignore:
-      - 'releases/qcli **'
+    tags-ignore:
+      - 'qcli*.*.*'
 
 jobs:
 
