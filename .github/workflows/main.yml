@@ -7,8 +7,8 @@ on:
       - 'qcli*.*.*'
 
 jobs:
-
   build:
+    if: ${{ !startsWith(github.event.release.name, 'qcli') }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
